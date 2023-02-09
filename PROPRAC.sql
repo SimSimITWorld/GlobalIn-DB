@@ -25,5 +25,6 @@ NOCYCLE;
 DROP SEQUENCE PROPRAC_SEQ;
 COMMIT;
 
-INSERT INTO PROPRAC(NO, TITLE, WRITER, PASS, CONTENT, REF, STEP, DEPTH, REGDATE) VALUES(1, '자유롭게 질문해주세요.', '관리자', 'system_master', '안녕하세요. 요기조기 입니다. 자유롭게 질문해주시면 최대한 빠른 시일 내로 답변 드리겠습니다. 감사합니다.', 1, 1, 1, SYSDATE);
+SELECT * FROM PROPRAC;
+INSERT INTO PROPRAC(NO, TITLE, WRITER, PASS, CONTENT, REF, STEP, DEPTH, REGDATE) VALUES(1, '자유롭게 질문해주세요.', '관리자', 'system_master', '안녕하세요. 요기조기 입니다. 자유롭게 질문해주시면 최대한 빠른 시일 내로 답변 드리겠습니다. 감사합니다.', 1, 0, 0, SYSDATE);
 DELETE FROM PROPRAC ;
